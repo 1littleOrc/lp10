@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2:400,700&subset=cyrillic');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+html {
+	font-size: 10px;
+}
+body { 
+	font-family: 'Exo 2', sans-serif;
+}
+button:focus, button:active, button, input, textarea {outline:0;}
+
+.no-gutter, .no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+section.wrapper {
+	// height: 100vh;
+	// width: 100wv;
+	// background: #6699cc;
+	// background: -webkit-gradient(linear, left top, left bottom, from(rgba(102, 153, 204, 0.4)),to(rgba(102, 153, 204, 0.4))), url(../img/bg.jpg) center center cover no-repeat fixed;
+	// background: -webkit-linear-gradient(top, rgba(102, 153, 204, 0.4) 0%,rgba(102, 153, 204, 0.4) 100%), url(../img/bg.jpg) center center cover no-repeat fixed;
+	// background: linear-gradient(to bottom, rgba(102, 153, 204, 0.4) 0%,rgba(102, 153, 204, 0.4) 100%), url(../img/bg.jpg) center center cover no-repeat fixed;
+	// background-size: cover;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	        height: 100%;
+
+}
+.page-container {
+	
+	
+}
+.info {
+	min-height: 100%;
+	padding-bottom: 12rem;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(102, 153, 204, 0.4)),to(rgba(102, 153, 204, 0.4))), url(../img/bg.jpg) center center no-repeat fixed;
+	background: -webkit-linear-gradient(top, rgba(102, 153, 204, 0.4) 0%,rgba(102, 153, 204, 0.4) 100%), url(../img/bg.jpg) center center no-repeat fixed;
+	background: linear-gradient(to bottom, rgba(102, 153, 204, 0.4) 0%,rgba(102, 153, 204, 0.4) 100%), url(../img/bg.jpg) center center no-repeat fixed;
+	background-size: cover;
+	// background-image: url(../img/bg.jpg);
+ //    background-position: center center;
+ //    background-repeat: no-repeat;
+ //    background-attachment: fixed;
+ //    background-size: cover;
+ //    background-color: #464646;
+}
+
+.top-line {
+	color: #fff;
+	margin-top: 2rem;
+}
+
+.logo-description {
+	margin-top: 1rem;
+	font-weight: 700;
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+.logo-subdecrtiption {
+	font-size: 1.5rem;
+
+}
+
+.phone-hot {
+	font-size: 2rem;
+}
+.phone-number {
+	font-size: 3rem;
+	font-weight: 700;
+}
+.phone-schedule {
+	font-size: 1.5rem;
+}
+.phone-hot, .phone-number, .phone-schedule {
+	text-align: right;
+}
+
+.bg-form {
+	background-color: rgba(255, 255, 255, 0.75);
+	width: 100%;
+	margin-bottom: 3rem;
+	margin-top: 5rem;
+}
+.form-header {
+	margin-top: 3rem;
+	color:  #6699cc;
+	font-size: 3rem;
+	font-weight: 700;
+	text-align: center;
+}
+.form-description {
+	color: #333;
+	font-size: 2rem;
+	text-align: center;
+	margin-bottom: 3rem;
+}
+.i-name, .i-phone, .i-msg, .i-send  {
+	width: 100%;
+	-webkit-border-radius: 20px;
+	        border-radius: 20px;
+	border: 0;
+	color:  #999999;
+	font-weight: 400;
+	font-size: 2rem;
+	line-height: 1.2;
+	padding: 2rem 1rem 2rem 40px;
+	margin-bottom: 2rem;
+}
+
+.i-name {
+	background: url(../img/user.png) no-repeat scroll 15px 50%, #fff;
+}
+.i-phone {
+	background: url(../img/phone.png) no-repeat scroll 15px 50%, #fff;
+}
+.i-msg {
+	background: url(../img/pen.png) no-repeat scroll 15px 2rem, #fff;
+}
+.i-send {
+	background-color: #6699cc;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 2rem;
+}
+
+.ft {
+	background-color: #fff;
+	padding-top: 3rem;
+	padding-bottom: 1.5rem;	
+	 height: 10rem;
+	 // margin-top: -5rem;
+  margin-top: -10rem;
+}
+.ft-left-h {
+	color: #333333;
+	font-size: 1.5rem;
+}
+.ft-left-p {
+	color: #999999;
+	font-size: 1.5rem;
+
+}
+.ft-right-h {
+	color: #333333;
+	text-align: right;
+	font-size: 1.5rem;
+}
+.ft-right-p {
+	color: #999999;
+	text-align: right;
+	font-size: 1.5rem;
+}
+
+@media (max-width: 768px) { 
+	html {
+		font-size: 5px;
+	}
+}
+@media (min-width: 0px) and (max-width: 992px) {
+
+}
