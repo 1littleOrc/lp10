@@ -1,13 +1,4 @@
-@font-face {
-    font-family: MuseoSansRegular;
-	src: url(../fonts/MuseoSansRegular.ttf);
-}
-
-@font-face {
-    font-family: MuseoSansBold;
-	src: url(../fonts/MuseoSansBold.ttf);
-}
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700&subset=cyrillic');
 
 html, body {
     height: 100%;
@@ -18,7 +9,10 @@ html {
 	font-size: 10px;
 }
 body { 
-	font-family: 'MuseoSansRegular', sans-serif;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 2.5rem;
 }
 button:focus, button:active, button, input, textarea {outline:0;}
 .vcenter {
@@ -39,103 +33,104 @@ section.wrapper {
 .info {
 	min-height: 100%;
 	padding-bottom: 12rem;
-	background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)),to(rgba(255, 255, 255, 0.8))), url(../img/bg.jpg) center center no-repeat fixed;
-	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.8) 0%,rgba(255, 255, 255, 0.8) 100%), url(../img/bg.jpg) center center no-repeat fixed;
-	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%,rgba(255, 255, 255, 0.8) 100%), url(../img/bg.jpg) center center no-repeat fixed;
+	background: url(../img/bg.jpg) center center no-repeat fixed;
 	background-size: cover;
 }
 
 .top-line {
-	// -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.06);
-	//         -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.06);
-	//                 box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.06);
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 }
 
 .logo-description {
-	margin-top: 1rem;
-	color: #010101;
-	font-size: 1.5rem;
-	margin-top: 2.5rem;
 }
+.logo-subdescription  {
 
-
+}
 .phone-hot {
-	font-size: 1.5rem;
-	color:  #999999
+	text-transform: uppercase;
+	
 }
 .phone-number {
-	font-size: 2rem;
-	font-family: 'MuseoSansBold';
-	color: #006633;
-}
-.phone-number:before {
-	content:url('../img/phone.png');
-	position:relative; 
-	margin-right: 1rem;
-	z-index:100000; 
-	top: 2px;
+	font-weight: 700;
 }
 .phone-hot, .phone-number {
 	text-align: right;
+	display: inline-block;
+	margin-top: 1rem;
 }
 
 .bg-form {
-	-webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.06);
-	        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.06);
-	background-color: rgba(255, 255, 255, 1);
+	-webkit-box-shadow: 0px 0px 24px 0px rgba(0, 0, 1, 0.35);
+	        box-shadow: 0px 0px 24px 0px rgba(0, 0, 1, 0.35);
+	background-color: rgba(255, 255, 255, 0.05);
 	width: 100%;
 	margin-bottom: 5rem;
 	margin-top: 5rem;
 	padding: 5rem;
 }
 .form-header {
-	margin-top: 2rem;
-	color:  #006633;
-	font-size: 2.5rem;
-	margin-bottom: 3rem;
+	// margin-top: 2rem;
+	font-weight: 700;
+	margin-bottom: 2.5rem;
 }
-.i-name, .i-phone {
-	background-color: #fcfcfc;
+#input-name, #input-phone, #input-msg {
+	border:0px;
+	background-color: transparent;
+    border-bottom:2px solid #eee;
+    position: relative;
+}
+#input-name:after { 
+    content: "1";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #000;
+    font-size: 18px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 10px;
+    left: 0;
 }
 .i-name, .i-phone, .i-msg, .i-send  {
 	width: 100%;
 	border: 0;
-	color:  #006633;
+	color:  #fff;
 	font-weight: 400;
 	font-size: 2rem;
 	line-height: 1.2;
-	padding: 2rem 1rem 2rem 2rem;
+	padding: 2rem 1rem 2rem 0rem;
 }
 
-::-webkit-input-placeholder { /**/ WebKit, Blink, Edge */
-    color:    #006633;
-    opacity:  0.5;
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #fff;
+    opacity:  1;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    #006633;
-   opacity:  0.5;
+   color:    #fff;
+   opacity:  1;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    #006633;
-   opacity:  0.5;
+   color:    #fff;
+   opacity:  1;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color:    #006633;
+   color:    #fff;
 }
 
 .i-send {
-	background-color: #006633;
-	color: #fff !important;
-	text-transform: uppercase;
-	font-weight: 700;
 	font-size: 2rem;
+	-webkit-border-radius: 4px;
+	        border-radius: 4px;
+	background-color:  #182e5e;
+	color: #fff;	
+	font-weight: 700;
 }
 
 .list-header {
 	font-size: 2.5rem;
-	font-family: 'MuseoSansBold';
 	margin-bottom: 3rem;
 	margin-top: 30%;
 }
@@ -173,7 +168,6 @@ li.list-items:before {
 .ft-center-two {
 	font-size: 3.5rem;
 	color:  #006633;
-	font-family: 'MuseoSansBold';
 }
 .ft-center-three {
 	font-size: 1.5rem;
