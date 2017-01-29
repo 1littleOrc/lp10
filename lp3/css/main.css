@@ -40,6 +40,7 @@ section.wrapper {
 .top-line {
 	padding-top: 2rem;
 	padding-bottom: 2rem;
+	margin-bottom: 5rem;
 }
 
 .logo-description {
@@ -66,7 +67,6 @@ section.wrapper {
 	background-color: rgba(255, 255, 255, 0.05);
 	width: 100%;
 	margin-bottom: 5rem;
-	margin-top: 5rem;
 	padding: 5rem;
 }
 .form-header {
@@ -78,21 +78,10 @@ section.wrapper {
 	border:0px;
 	background-color: transparent;
     border-bottom:2px solid #eee;
-    position: relative;
 }
-#input-name:after { 
-    content: "1";
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: inherit;
-/*--adjust as necessary--*/
-    color: #000;
-    font-size: 18px;
-    padding-right: 0.5em;
-    position: absolute;
-    top: 10px;
-    left: 0;
+.form-control-feedback {
+	top: 25% !important;
+	right: 10px !important;
 }
 .i-name, .i-phone, .i-msg, .i-send  {
 	width: 100%;
@@ -129,24 +118,19 @@ section.wrapper {
 	font-weight: 700;
 }
 
-.list-header {
-	font-size: 2.5rem;
-	margin-bottom: 3rem;
-	margin-top: 30%;
+.orange-header {
+	margin-top: 20%;
+	color:  #ff9933;
+	font-size: 3rem;
+	font-weight: 700;
+	text-transform: uppercase;
 }
-ul {
-	-webkit-padding-start: 0px;
-	list-style: none;
+.orange-description {
+	font-size: 2.3rem;
 }
-li.list-items {
-	color:  #666666;
-	font-size: 2rem;
-}
-li.list-items:before {
-	content:url('../img/list-point.png');
-	position:relative; 
-	margin-right: 1rem;
-	z-index:10; 
+.orange-text {
+	margin-top: 2rem;
+	font-size: 2.3rem;
 }
 
 .ft {
@@ -161,14 +145,6 @@ li.list-items:before {
 	color: #333333;
 	font-size: 1.5rem;
 }
-.ft-center-one {
-	font-size: 2rem;
-	color:  #666666;
-}
-.ft-center-two {
-	font-size: 3.5rem;
-	color:  #006633;
-}
 .ft-center-three {
 	font-size: 1.5rem;
 }
@@ -176,6 +152,12 @@ li.list-items:before {
 @media (max-width: 768px) { 
 	html {
 		font-size: 5px;
+	}
+	.orange-header {
+		margin-top: 5%;
+	}
+	.orange-text {
+		margin-bottom: 5%;
 	}
 }
 @media (min-width: 0px) and (max-width: 992px) {
