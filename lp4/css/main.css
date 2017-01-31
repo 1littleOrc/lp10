@@ -1,0 +1,216 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Exo 2', sans-serif;
+}
+
+button:focus,
+button:active,
+button,
+input,
+textarea {
+    outline: 0;
+}
+
+.no-gutter,
+.no-gutter > [class*='col-'] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+section.wrapper {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.info {
+    min-height: 100%;
+    padding-bottom: 12rem;
+    background-color: #fbfbfb;
+}
+
+.top-line {
+    margin-top: 2rem;
+}
+
+.logo-description {
+    margin-top: 1rem;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.logo-subdecrtiption {
+    font-size: 1.5rem;
+}
+
+.phone-hot {
+    font-size: 2rem;
+}
+
+.phone-number {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.phone-schedule {
+    font-size: 1.5rem;
+}
+
+.phone-hot,
+.phone-number,
+.phone-schedule {
+    text-align: right;
+}
+
+.main-header {
+    font-size: 4rem;
+    color: #339933;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 5rem;
+}
+
+.main-description {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.form-content {
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    // background: -webkit-linear-gradient(90deg, #0066cc 0%, #007efb 100%);
+    // background: -webkit-gradient(linear, left bottom, left top, from(#0066cc), to(#007efb));
+    // background: -webkit-linear-gradient(bottom, #0066cc 0%, #007efb 100%);
+    background: url('../img/lady.png') no-repeat bottom right,
+    			-webkit-gradient(linear, left bottom, left top, from(#0066cc), to(#007efb));
+    background: url('../img/lady.png') no-repeat bottom right,
+    			-webkit-linear-gradient(bottom, #0066cc 0%, #007efb 100%);
+    background: url('../img/lady.png') no-repeat bottom right,
+    			linear-gradient(0deg, #0066cc 0%, #007efb 100%);
+    -webkit-box-shadow: 0px 0px 29px 0px rgba(0, 0, 1, 0.33);
+    box-shadow: 0px 0px 29px 0px rgba(0, 0, 1, 0.33);
+    color: #fff;
+    padding: 4rem;
+    margin-top: 5rem;
+}
+
+.bg-form {
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 100%;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+}
+
+.form-header {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.form-description {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.i-name,
+.i-phone,
+.i-msg,
+.i-send {
+    width: 100%;
+    -webkit-border-radius: 20px;
+    border-radius: 10px;
+    border: 0;
+    color: #999999;
+    font-weight: 400;
+    font-size: 1.6rem;
+    // line-height: 1.2;
+    padding: 2rem 1rem 2rem 2rem;
+    margin-bottom: 2rem;
+}
+
+.i-msg {}
+
+.i-send {
+    background: -webkit-gradient(linear, left bottom, left top, from(#359b35), to(#64ca64));
+    background: -webkit-linear-gradient(bottom, #359b35, #64ca64);
+    background: linear-gradient(to top, #359b35, #64ca64);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.wework {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 3rem;
+	font-weight: 700;
+	margin-top: 10rem;
+	color:  #339933;
+	margin-bottom: 5rem;
+}
+.items-descr {
+	text-align: center;
+	margin-bottom: 5rem;
+	font-size: 1.8rem;
+}
+
+.ft {
+    background-color: #fff;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    height: 10rem;
+    // margin-top: -5rem;
+    margin-top: -10rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.ft-left-h {
+    color: #333333;
+    font-size: 1.5rem;
+}
+
+.ft-left-p {
+    color: #999999;
+    font-size: 1.5rem;
+}
+
+.ft-right-h {
+    color: #333333;
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+.ft-right-p {
+    color: #999999;
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 5px;
+    }
+    .form-content {
+    	background: -webkit-gradient(linear, left bottom, left top, from(#0066cc), to(#007efb));
+    	background: -webkit-linear-gradient(bottom, #0066cc 0%, #007efb 100%);
+    	background: linear-gradient(0deg, #0066cc 0%, #007efb 100%);
+    }
+}
+
+@media (min-width: 0px) and (max-width: 992px) {}
